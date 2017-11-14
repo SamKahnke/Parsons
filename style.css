@@ -1,0 +1,123 @@
+:root {
+	--link-color: #b02029;
+	--btn-gradient-light-color: #cc3333;
+	--btn-gradient-dark-color: #962029;
+	--dark-header-color: #6D6D6D;
+	--short-card-height: 229px;
+	--verticle-card-margin: 30px;
+}
+
+body {
+	font-family: Calibri, Candara, Arial, sans-serif;
+	color: #000;
+	background-image: url("imgs/light_noise_diagonal.png");
+	background-repeat: repeat;
+}
+
+h1 { 
+	font-size: 46px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+	display: inline-block;
+}
+
+h2, h3 {
+	font-size: 16px; 
+	font-weight: bold;
+}
+
+p { font-size: 14px; }
+
+header {
+	border-bottom: 1px solid #555;
+	height: 95px;
+	margin: 0 15px;
+	box-shadow: 0 1px 2px #666;
+	background-color: var(--dark-header-color);
+}
+
+.navbar-separator {
+	height: 20px;
+	width: 2px;
+	background-color: #fff;
+}
+
+.card-short { height: var(--short-card-height); }
+
+.card-tall { height: calc(var(--short-card-height) * 2 + var(--verticle-card-margin)); } /*calc double card height*/
+
+#logo {
+	background-color: #fff;
+	border: 5px solid var(--link-color);
+	height: 100px;
+	width: 100px;
+	transform: translate(-12px, 10px);
+	margin-right: 20px;
+	box-shadow: 2px 2px 2px #444;
+}
+
+#logout {
+	display: inline-block;
+	float: right;
+	border: none;
+	background: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	margin: 50px 20px 0 0;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*--------------------Bootstrap Overrides--------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.nav {
+	width: 900px;
+	height: 30px;
+	background-color: var(--link-color);
+	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
+	border: none;
+	border-radius: .25rem;
+	box-shadow: 1px 1px 2px #444;
+
+    margin:0 auto;
+    transform: translate(70px, -15px);
+    align-items: center;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+.card {
+	border: none;
+	box-shadow: 0 0 3px #666;
+	margin-bottom: var(--verticle-card-margin);
+}
+
+.card-header {
+	background-color: #000;
+	border: 2px solid #000;
+	border-bottom: none;
+	padding: 4px 0px 5px 8px;
+	height: 30px;
+}
+
+.card-header:first-child { border-radius: .25rem .25rem 0 0; }
+
+.card-title { color: #fff; }
+
+.card-body {
+	background-color: #fff;
+	border-radius: 0 0 .25rem .25rem;
+	border: none;
+	border-top: none;
+	
+}
+
+
+
+
+
+
