@@ -9,40 +9,48 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
+
+	<div class="container">	
 		<header class="header-container">
-		    <h1><img id="logo" alt="Parsons Logo" src="imgs/ParsonsLogo.svg">PARSONS CONNECTION</h1>
-		    <button id="logout"><h2>Log Out</h2></button>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<h1 class="navbar-brand"><img id="logo" alt="Parsons Logo" src="imgs/ParsonsLogo.svg">PARSONS CONNECTION</h1>
+			  	<button 	class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" 
+			  		  	aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			 	</button>
+			  	<div class="collapse navbar-collapse" id="main-navbar">
+			  	
+			    
+			    	<ul class="navbar-nav justify-content-center">
+						<li class="nav-item">
+						  	<a class="nav-link" href="#">Project LifeCycle Checklist</a>
+						</li>
+						<div class="navbar-separator" aria-hidden="true"></div>
+						<li class="nav-item">
+						 	<a class="nav-link" href="#">PM Forms</a>
+						</li>
+						<div class="navbar-separator" aria-hidden="true"></div>
+						<li class="nav-item">
+						 	<a class="nav-link" href="#">Company Info</a>
+						</li>
+						<div class="navbar-separator" aria-hidden="true"></div>
+						<li class="nav-item">
+						 	<a class="nav-link" href="#">Archived News</a>
+						</li>
+						<div class="navbar-separator" aria-hidden="true"></div>
+						<li class="nav-item">
+						 	<a class="nav-link" href="#">Company Benefits</a>
+						</li>
+						<div class="navbar-separator" aria-hidden="true"></div>
+						<li class="nav-item">
+						 	<a class="nav-link" href="#">Parsons Website</a>
+						</li>
+					</ul>
+			  </div>
+			</nav>
 		</header>
-
-		<ul class="nav nav-tabs justify-content-center">
-			<li class="nav-item">
-			  	<a class="nav-link" href="#">Project LifeCycle Checklist</a>
-			</li>
-			<div class="navbar-separator"></div>
-			<li class="nav-item">
-			 	<a class="nav-link" href="#">PM Forms</a>
-			</li>
-			<div class="navbar-separator"></div>
-			<li class="nav-item">
-			 	<a class="nav-link" href="#">Company Info</a>
-			</li>
-			<div class="navbar-separator"></div>
-			<li class="nav-item">
-			 	<a class="nav-link" href="#">Archived News</a>
-			</li>
-			<div class="navbar-separator"></div>
-			<li class="nav-item">
-			 	<a class="nav-link" href="#">Company Benefits</a>
-			</li>
-			<div class="navbar-separator"></div>
-			<li class="nav-item">
-			 	<a class="nav-link" href="#">Parsons Website</a>
-			</li>
-		</ul>
 	</div>
-
-			<div class="container">
+			<div class="container main-content">
 				<div class="row">
 					<div class="col-md-4">
 						<div class="card card-short">
@@ -180,6 +188,5 @@
 					</div>
 				</div>
 			</div>
-		</div>
 </body>
 </html>

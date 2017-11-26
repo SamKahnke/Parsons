@@ -1,3 +1,21 @@
+@media (min-width: 768px) {
+	.container {
+	    max-width: 860px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+	    max-width: 1140px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1140px;
+	}
+}
+
 :root {
 	--link-color: #b02029;
 	--btn-gradient-light-color: #cc3333;
@@ -14,13 +32,6 @@ body {
 	background-repeat: repeat;
 }
 
-h1 {
-	font-size: 46px;
-	color: #fff;
-	text-shadow: 1px 1px 2px #000;
-	display: inline-block;
-}
-
 h2, h3 {
 	font-size: 16px;
 	font-weight: bold;
@@ -31,7 +42,7 @@ p { font-size: 14px; }
 header {
 	border-bottom: 1px solid #555;
 	height: 95px;
-	margin: 0 15px;
+	/*margin: 0 15px;*/
 	box-shadow: 0 1px 2px #666;
 	background-color: var(--dark-header-color);
 }
@@ -40,10 +51,15 @@ a {
 	color: var(--link-color);
 }
 
-.navbar-separator {
+.navbar-separator { /*white line between nav items*/
 	height: 20px;
 	width: 2px;
+	margin: 0 2px;
 	background-color: #fff;
+}
+
+.main-content {
+	margin-top: 30px;
 }
 
 .card-short { height: var(--short-card-height); }
@@ -61,7 +77,7 @@ a {
 }
 
 #logout {
-	display: inline-block;
+	display: inline-flex;
 	float: right;
 	border: none;
 	background: none;
@@ -76,21 +92,49 @@ a {
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 
-.nav {
-	width: 900px;
-	height: 30px;
-	background-color: var(--link-color);
-	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
-	border: none;
-	border-radius: .25rem;
-	box-shadow: 1px 1px 2px #444;
-    margin: 0 auto;
-    transform: translate(70px, -15px);
-    align-items: center;
+.navbar {
+	padding: 0;
+}
+
+.navbar-brand { 
+	font-size: 46px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+	display: inline-block;
+}
+
+@media (min-width: 992px) {
+	.navbar-nav {
+		width: 900px;
+		height: 30px;
+		background-color: var(--link-color);
+		background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
+		border: none;
+		border-radius: .25rem;
+		box-shadow: 1px 1px 2px #444;
+	    margin: 0 auto;
+	    transform: translate(-450px, 37px); /*70px, -15px*/
+	    align-items: center;
+	    z-index: 10;
+	}
+}
+
+@media (max-width: 1200px) {
+	.navbar-nav {
+	    width: 820px;
+	}
 }
 
 .nav-link {
 	color: #fff;
+}
+
+.nav-link:hover {
+	text-decoration: none;
+}
+
+.nav-tabs .nav-link, .nav-link:hover {
+	border: none;
 }
 
 .card {
