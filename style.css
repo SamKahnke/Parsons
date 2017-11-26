@@ -36,6 +36,10 @@ header {
 	background-color: var(--dark-header-color);
 }
 
+a {
+	color: var(--link-color);
+}
+
 .navbar-separator {
 	height: 20px;
 	width: 2px;
