@@ -2,25 +2,29 @@
 <html>
 <head>
 	<title>Parsons Connection</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/vendors/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="/vendors/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
 <body>
 
-	<div class="container">	
+	<div class="container">
 		<header class="header-container">
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<h1 class="navbar-brand"><img id="logo" alt="Parsons Logo" src="imgs/ParsonsLogo.svg">PARSONS CONNECTION</h1>
-			  	<button 	class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" 
+			  	<button 	class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
 			  		  	aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 			    	<span class="navbar-toggler-icon"></span>
 			 	</button>
 			  	<div class="collapse navbar-collapse" id="main-navbar">
-			  	
-			    
+
+
 			    	<ul class="navbar-nav justify-content-center">
 						<li class="nav-item">
 						  	<a class="nav-link" href="#">Project LifeCycle Checklist</a>
@@ -65,7 +69,7 @@
 							<div class="card-header">
 								<h2 class="card-title">My Courses</h2>
 							</div>
-							<div class="card-body" id="card-pulse">
+							<div class="card-body mCustomScrollbar" id="card-pulse">
 								<strong>eLearning</strong>
 
 									<!-- Mock data for My Courses in format in which it will be supplied -->
