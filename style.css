@@ -32,6 +32,10 @@ body {
 	background-repeat: repeat;
 }
 
+h1 {
+	font-family: "eurostile-extended", sans-serif;
+}
+
 h2, h3 {
 	font-size: 16px;
 	font-weight: bold;
@@ -66,6 +70,12 @@ a {
 
 .card-tall { height: calc(var(--short-card-height) * 2 + var(--verticle-card-margin)); } /*calc double card height*/
 
+.card-body-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 #logo {
 	background-color: #fff;
 	border: 5px solid var(--link-color);
@@ -86,6 +96,27 @@ a {
 	margin: 50px 20px 0 0;
 }
 
+#parsons-pulse-logo {
+	max-width: 300px;
+}
+
+.btn-parsons {
+	background: var(--link-color);
+	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
+	margin-left: auto;
+	margin-right: auto;
+  border: none;
+	width: 150px;
+    color: white;
+    /*padding: 15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /*--------------------Bootstrap Overrides--------------------*/
@@ -96,7 +127,7 @@ a {
 	padding: 0;
 }
 
-.navbar-brand { 
+.navbar-brand {
 	font-size: 46px;
 	color: #fff;
 	text-shadow: 1px 1px 2px #000;
