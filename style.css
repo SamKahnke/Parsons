@@ -128,7 +128,22 @@ a {
   border: none;
   color: #fff;
   font-size: 14px;
-	width: 30px;
+	box-shadow: 2px 2px 2px #999;
+}
+
+.btn-parsons-small {
+	width: 60px;
+	height: 28px;
+	margin-left: 10px;
+	float: right;
+	padding: 0px;
+}
+
+.btn-parsons-large {
+	width: 130px;
+	height: 28px;
+	float: right;
+	padding: 0px;
 }
 
 .btn-parsons-pulse {
@@ -145,6 +160,7 @@ a {
 	height: 24px;
 	font-size: 14px;
 	font-style: italic;
+	box-shadow: inset 2px 2px 2px #999;
 }
 
 .fa-search {
@@ -157,7 +173,7 @@ a {
 .company-links {
 	flex-direction: row;
 	justify-content: space-around;
-	padding-top: 0px;
+	padding-top: 20px;
 	padding-bottom: 0px;
 }
 
@@ -165,17 +181,6 @@ a {
 	margin-bottom: 16px;
 	line-height: 1.15;
 	max-width: 130px;
-}
-
-.company-link-labels {
-	justify-content: flex-start;
-	max-width: 130px;
-}
-
-.company-link-buttons {
-	justify-content: flex-start;
-	max-width: 130px;
-	float: right;
 }
 
 /*-----------------------------------------------------------*/
