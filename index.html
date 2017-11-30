@@ -3,29 +3,30 @@
 <head>
 	<title>Parsons Connection</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="style.css"/>
 	<link rel="stylesheet" href="/vendors/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
-	<link rel="stylesheet" href="https://use.typekit.net/isb6vfs.css"
+	<link rel="stylesheet" href="https://use.typekit.net/isb6vfs.css"/>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 	<script src="/vendors/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="https://use.fontawesome.com/82a0fa34f2.js"></script>
 
 </head>
 <body>
-	<div class="container">	
+	<div class="container">
 		<div class="header-container" role="header">
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<div role="banner">
 					<h1 class="navbar-brand"><img id="logo" alt="Parsons Logo" src="imgs/ParsonsLogo.svg">PARSONS CONNECTION</h1>
 				</div>
-			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" 
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
 			  		  	aria-expanded="false" aria-label="Toggle navigation" alt="Toggle navigation">
 			    	<span class="navbar-toggler-icon"></span>
 			 	  </button>
-			  	<div class="collapse navbar-collapse" id="main-navbar">	    
+			  	<div class="collapse navbar-collapse" id="main-navbar">
 			    	<ul class="navbar-nav justify-content-center">
 						<li class="nav-item">
 						  	<a class="nav-link" href="#">Project LifeCycle Checklist</a>
@@ -63,10 +64,18 @@
 						</div>
 						<div class="card-body card-body-center">
 							<img id="parsons-pulse-logo" alt="Parsons Pulse Logo" src="imgs/parsons_pulse.svg">
-								<button type="button" class="btn btn-parsons">
-									<span>PULSE</span><br>
-									<span>Training and Tools</span>
-								</button>
+								<div>
+									<button type="button" class="btn btn-parsons">
+										<span>PULSE</span><br>
+										<span>Training and Tools</span>
+									</button>
+								</div>
+								<div class="form-group">
+	                <div class="btn-search">
+                    <input type="text" placeholder="Search..." class="form-control" id="search">
+                    <label for="search" class="fa fa-search" title="search"></label>
+	                </div>
+            		</div>
 						</div>
 					</div>
 					<div class="card card-short">
@@ -121,8 +130,44 @@
 						<div class="card-header">
 							<h2 class="card-title">Company Links</h2>
 						</div>
-						<div class="card-body" id="card-pulse">
-							<p>Content</p>
+						<div class="card-body company-links">
+							<p class="company-link-labels">
+								<p class="text-label-items">
+									Parsons Helpdesk<br>
+									952-479-2762
+								</p>
+								<p class="text-label-items">
+									Access to HRSS<br>
+									and ECMS
+								</p>
+								<p class="text-label-items">
+									Emergency On-Call<br>
+									Schedules
+								</p>
+								<p class="text-label-items">
+									Out of Office Form
+								</p>
+							</p>
+					<p class="company-link-buttons">
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+							<button type="button" class="btn btn-parsons">
+								<span>Training and Tools</span>
+							</button>
+						</p>
 						</div>
 					</div>
 				</div>

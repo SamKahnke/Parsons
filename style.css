@@ -77,9 +77,11 @@ a {
 .card-tall { height: calc(var(--short-card-height) * 2 + var(--verticle-card-margin)); } /*calc double card height*/
 
 .card-body-center {
+	padding-top: 0px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 
 #logo {
@@ -111,24 +113,65 @@ a {
 
 #parsons-pulse-logo {
 	max-width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .btn-parsons {
 	background: var(--link-color);
 	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
-	margin-left: auto;
-	margin-right: auto;
   border: none;
-	width: 150px;
-    color: white;
-    /*padding: 15px 32px;*/
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  color: #fff;
+  font-size: 14px;
+	width: 30px;
 }
 
+.btn-parsons-pulse {
+	width: 120px;
+}
 
+.form-group {
+	margin-bottom: 0px;
+}
+
+.form-control {
+	display: block;
+	margin-top: 18px;
+	height: 24px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.fa-search {
+	float: right;
+	padding-right: 10px;
+	transform: translate(0px, -20px);
+	color: #999;
+}
+
+.company-links {
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.text-label-items {
+	margin-bottom: 16px;
+	line-height: 1.15;
+	max-width: 130px;
+}
+
+.company-link-labels {
+	justify-content: flex-start;
+	max-width: 130px;
+}
+
+.company-link-buttons {
+	justify-content: flex-start;
+	max-width: 130px;
+	float: right;
+}
 
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
@@ -140,7 +183,7 @@ a {
 	padding: 0;
 }
 
-.navbar-brand { 
+.navbar-brand {
 	font-size: 24px;
 	color: #fff;
 	text-shadow: 1px 1px 2px #000;
@@ -161,7 +204,7 @@ a {
 	    align-items: center;
 	}
 
-	.navbar-brand { 
+	.navbar-brand {
 		font-size: 46px;
 		padding-top: .3125rem;
 	    padding-bottom: .3125rem;
