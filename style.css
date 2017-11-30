@@ -69,7 +69,7 @@ a {
 .navbar-separator { /*white line between nav items*/
 	height: 20px;
 	width: 2px;
-	margin: 0 3px;
+	margin: 0 2px;
 	background-color: #fff;
 }
 
@@ -202,7 +202,7 @@ a {
 
 @media (min-width: 992px) {
 	.navbar-nav {
-		width: 820px;
+		width: 880px;
 		height: 30px;
 		background-color: var(--link-color);
 		background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
