@@ -20,6 +20,7 @@
 
 :root {
 	--link-color: #b02029;
+	--link-hover-color: #F0C5C1;
 	--btn-gradient-light-color: #cc3333;
 	--btn-gradient-dark-color: #962029;
 	--dark-header-color: #6D6D6D;
@@ -56,6 +57,10 @@ p { font-size: 14px; }
 
 a {
 	color: var(--link-color);
+}
+
+a:hover {
+	color: var(--link-hover-color);
 }
 
 .right-nav-container {
@@ -118,8 +123,8 @@ a {
 
 #parsons-pulse-logo {
 	max-width: 300px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .btn-parsons {
@@ -129,6 +134,11 @@ a {
   color: #fff;
   font-size: 14px;
 	box-shadow: 2px 2px 2px #999;
+}
+
+.btn-parsons:hover {
+	cursor: pointer;
+	color: 	var(--link-hover-color);
 }
 
 .btn-parsons-small {
@@ -202,7 +212,7 @@ a {
 
 @media (min-width: 992px) {
 	.navbar-nav {
-		width: 880px;
+		width: 900px;
 		height: 30px;
 		background-color: var(--link-color);
 		background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
@@ -257,6 +267,7 @@ a {
 	border: none;
 	box-shadow: 0 0 3px #666;
 	margin-bottom: var(--verticle-card-margin);
+	/*z-index: -1;*/
 }
 
 .card-header {
@@ -279,4 +290,30 @@ a {
 	border: none;
 	border-top: none;
 	overflow: auto;
+}
+
+.header-container {
+	position: relative;
+	z-index: 2;
+}
+
+/*.main-content {
+	z-index: 1;
+}*/
+.show {
+	padding: 0px;
+	z-index: 10000;
+}
+
+.dropdown-menu {
+	position: relative;
+	background-color: var(--link-color);
+	padding: 5px;
+	box-shadow: 2px 2px 2px #555;
+	/*background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));*/
+}
+
+.dropdown-item {
+	color: #fff;
+	padding: 2px 5px 2px 5px;
 }
