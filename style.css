@@ -301,7 +301,7 @@ a:hover {
 	z-index: 1;
 }*/
 .show {
-	padding: 0px;
+	/*padding: 0px;*/
 	z-index: 10000;
 }
 
@@ -314,6 +314,7 @@ a:hover {
 }
 
 .dropdown-item {
+	font-size: 14px;
 	color: #fff;
 	padding: 2px 5px 2px 5px;
 }
