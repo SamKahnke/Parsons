@@ -4,17 +4,35 @@
 
 @media (min-width: 768px) {
 	.container { max-width: 880px; }
+
+	.mission-statement {
+		position: absolute;
+		left: 330px;
+		top: 640px;
+	}
 }
 
 @media (min-width: 992px) {
 	.container { max-width: 1140px; }
 
 	.header-container { height: 95px; }
+
+	.mission-statement {
+		position: absolute;
+		left: 375px;
+		top: 640px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 	    max-width: 1140px;
+	}
+
+	.mission-statement {
+		position: absolute;
+		left: 430px;
+		top: 640px;
 	}
 }
 
@@ -28,11 +46,17 @@
 	--verticle-card-margin: 30px;
 }
 
+.mission-statement {
+	opacity: 0.4;
+}
+
 body {
 	font-family: Calibri, Candara, Arial, sans-serif;
 	color: #000;
-	background-image: url("imgs/light_noise_diagonal.png");
-	background-repeat: repeat;
+	background-image: url("imgs/parsons_background.png"), url("imgs/light_noise_diagonal.png");
+	background-repeat: no-repeat, repeat;
+	background-attachment: local;
+	background-position: center top;
 }
 
 h1 { font-family: "eurostile-extended", sans-serif; }
@@ -230,6 +254,7 @@ a:hover {
 	    padding-bottom: .3125rem;
 	    line-height: inherit;
 	}
+
 }
 
 @media (max-width: 576px) {
@@ -297,11 +322,8 @@ a:hover {
 	z-index: 2;
 }
 
-/*.main-content {
-	z-index: 1;
-}*/
 .show {
-	/*padding: 0px;*/
+	padding: 0px;
 	z-index: 10000;
 }
 
@@ -310,11 +332,19 @@ a:hover {
 	background-color: var(--link-color);
 	padding: 5px;
 	box-shadow: 2px 2px 2px #555;
-	/*background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));*/
+	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
 }
 
 .dropdown-item {
 	font-size: 14px;
 	color: #fff;
-	padding: 2px 5px 2px 5px;
+	padding: 10px;
+}
+
+.dropdown-divider {
+	margin: 2px;
+}
+
+.justify-content-center {
+	padding: 5px;
 }
