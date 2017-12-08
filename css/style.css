@@ -4,46 +4,18 @@
 
 @media (min-width: 768px) {
 	.container { max-width: 880px; }
-
-	.mission-statement {
-		position: absolute;
-		left: 330px;
-		top: 640px;
-	}
 }
 
 @media (min-width: 992px) {
 	.container { max-width: 1140px; }
 
 	.header-container { height: 95px; }
-
-	.mission-statement {
-		position: absolute;
-		left: 375px;
-		top: 640px;
-	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 	    max-width: 1140px;
 	}
-
-	.mission-statement {
-		position: absolute;
-		left: 430px;
-		top: 640px;
-	}
-}
-
-:root {
-	--link-color: #b02029;
-	--link-hover-color: #F0C5C1;
-	--btn-gradient-light-color: #cc3333;
-	--btn-gradient-dark-color: #962029;
-	--dark-header-color: #6D6D6D;
-	--short-card-height: 229px;
-	--verticle-card-margin: 30px;
 }
 
 .mission-statement {
@@ -53,7 +25,7 @@
 body {
 	font-family: Calibri, Candara, Arial, sans-serif;
 	color: #000;
-	background-image: url("imgs/parsons_background.png"), url("imgs/light_noise_diagonal.png");
+	background-image: url("../imgs/parsons_background.png"), url("../imgs/light_noise_diagonal.png");
 	background-repeat: no-repeat, repeat;
 	background-attachment: local;
 	background-position: center top;
@@ -76,15 +48,15 @@ p { font-size: 14px; }
 .header-container {
 	border-bottom: 1px solid #555;
 	box-shadow: 0 1px 2px #666;
-	background-color: var(--dark-header-color);
+	background-color: #6D6D6D;
 }
 
 a {
-	color: var(--link-color);
+	color: #b02029;
 }
 
 a:hover {
-	color: var(--link-hover-color);
+	color: #F0C5C1;
 }
 
 .right-nav-container {
@@ -106,9 +78,9 @@ a:hover {
 	margin-top: 30px;
 }
 
-.card-short { height: var(--short-card-height); }
+.card-short { height: 229px; }
 
-.card-tall { height: calc(var(--short-card-height) * 2 + var(--verticle-card-margin)); } /*calc double card height*/
+.card-tall { height: 488px; }
 
 .card-body-center {
 	padding-top: 0px;
@@ -120,7 +92,7 @@ a:hover {
 
 #logo {
 	background-color: #fff;
-	border: 5px solid var(--link-color);
+	border: 5px solid #b02029;
 	height: 100px;
 	width: 100px;
 	transform: translate(-12px, 10px);
@@ -135,14 +107,15 @@ a:hover {
 	}
 }
 
-#logout {
-	display: inline-flex;
-	float: right;
-	border: none;
-	background: none;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-	margin: 50px 20px 0 0;
+#login-card {
+	margin-top: 16px;
+	height: auto;
+}
+
+@media (min-width: 576px) {
+	#login-card {
+		margin-top: 100px;
+	}
 }
 
 #parsons-pulse-logo {
@@ -152,8 +125,8 @@ a:hover {
 }
 
 .btn-parsons {
-	background: var(--link-color);
-	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
+	background: #b02029;
+	background: linear-gradient(#cc3333, #962029);
   border: none;
   color: #fff;
   font-size: 14px;
@@ -162,7 +135,7 @@ a:hover {
 
 .btn-parsons:hover {
 	cursor: pointer;
-	color: 	var(--link-hover-color);
+	color: 	#F0C5C1;
 }
 
 .btn-parsons-small {
@@ -188,7 +161,7 @@ a:hover {
 	margin-bottom: 0px;
 }
 
-.form-control {
+#search {
 	display: block;
 	margin-top: 18px;
 	height: 24px;
@@ -217,6 +190,23 @@ a:hover {
 	max-width: 130px;
 }
 
+.btn-parsons-center {
+	display: flex;
+	justify-content: center;
+}
+
+#btn-login {
+	padding: 6px 45px;
+}
+
+.login-form {
+	margin: 4px 0;
+}
+
+.login-icon {
+	height: 20px;
+}
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /*--------------------Bootstrap Overrides--------------------*/
@@ -236,10 +226,10 @@ a:hover {
 
 @media (min-width: 992px) {
 	.navbar-nav {
-		width: 900px;
+		width: 960px;
 		height: 30px;
-		background-color: var(--link-color);
-		background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
+		background-color: #b02029;
+		background: linear-gradient(#cc3333, #962029);
 		border: none;
 		border-radius: .25rem;
 		box-shadow: 1px 1px 2px #444;
@@ -291,8 +281,7 @@ a:hover {
 .card {
 	border: none;
 	box-shadow: 0 0 3px #666;
-	margin-bottom: var(--verticle-card-margin);
-	/*z-index: -1;*/
+	margin-bottom: 30px;
 }
 
 .card-header {
@@ -314,6 +303,10 @@ a:hover {
 	border-radius: 0 0 .25rem .25rem;
 	border: none;
 	border-top: none;
+	overflow: hidden;
+}
+
+.card-body:hover {
 	overflow: auto;
 }
 
@@ -322,17 +315,16 @@ a:hover {
 	z-index: 2;
 }
 
-.show {
-	padding: 0px;
+.dropdown.nav-item.show {
+	padding: 0;
 	z-index: 10000;
 }
 
 .dropdown-menu {
 	position: relative;
-	background-color: var(--link-color);
+	background-color: #b02029;
 	padding: 5px;
 	box-shadow: 2px 2px 2px #555;
-	background: linear-gradient(var(--btn-gradient-light-color), var(--btn-gradient-dark-color));
 }
 
 .dropdown-item {
@@ -347,4 +339,18 @@ a:hover {
 
 .justify-content-center {
 	padding: 5px;
+}
+
+.input-group {
+	margin-bottom: 24px;
+}
+
+.form-check {
+	padding-left: 20px;
+	margin-bottom: 24px;
+}
+
+.form-control:focus {
+	border: 1px solid #b02029;
+	box-shadow: none;
 }
