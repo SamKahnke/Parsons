@@ -29,6 +29,7 @@ body {
 	background-repeat: no-repeat, repeat;
 	background-attachment: local;
 	background-position: center top;
+	overflow: hidden;
 }
 
 h1 { font-family: "eurostile-extended", sans-serif; }
