@@ -351,6 +351,6 @@ a:hover {
 }
 
 .form-control:focus {
-	border: 1px solid #b02029;
+	border: 1px solid #aaf;
 	box-shadow: none;
 }
