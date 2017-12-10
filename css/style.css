@@ -225,6 +225,13 @@ div.card-body iframe {
 	margin: 20px;
 }
 
+.dropdown-menu {
+	position: relative;
+	background-color: #7a7a7a;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #555;
+}
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /*--------------------Bootstrap Overrides--------------------*/
@@ -243,6 +250,10 @@ div.card-body iframe {
 }
 
 @media (min-width: 992px) {
+	.dropdown-menu {
+
+		background-color: #b02029;
+	}
 	.navbar-nav {
 		font-size: 14px;
 		width: 860px;
@@ -333,13 +344,6 @@ div.card-body iframe {
 .dropdown.nav-item.show {
 	padding: 0;
 	z-index: 10000;
-}
-
-.dropdown-menu {
-	position: relative;
-	background-color: #b02029;
-	padding: 5px;
-	box-shadow: 2px 2px 2px #555;
 }
 
 .dropdown-item {
