@@ -1,3 +1,9 @@
+
+#mission {
+	opacity: 0.4;
+	width: 570px;
+}
+
 @media (min-width: 576px) {
 	.container { max-width: 720px; }
 }
@@ -10,16 +16,16 @@
 	.container { max-width: 1140px; }
 
 	.header-container { height: 95px; }
+
+	#mission {
+		width: 670px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 	    max-width: 1140px;
 	}
-}
-
-.mission-statement {
-	opacity: 0.4;
 }
 
 body {
@@ -83,14 +89,6 @@ a:hover {
 
 .card-tall { height: 488px; }
 
-.card-body-center {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	/*display: flex;
-	flex-direction: column;
-	align-items: center;*/
-}
-
 #logo {
 	background-color: #fff;
 	border: 5px solid #b02029;
@@ -121,6 +119,7 @@ a:hover {
 
 #parsons-pulse-logo {
 	max-width: 300px;
+	height: 60px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -156,6 +155,9 @@ a:hover {
 
 .form-group {
 	margin-bottom: 0px;
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #search {
@@ -175,8 +177,6 @@ a:hover {
 }
 
 .company-links {
-	flex-direction: row;
-	justify-content: space-around;
 	padding-top: 15px;
 	padding-bottom: 0px;
 }
@@ -336,7 +336,16 @@ div.card-body iframe {
 	border: none;
 	border-top: none;
 	overflow: auto;
-	max-height: 100%;
+	max-height: 95%;
+}
+
+
+.card-body-center {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .header-container {
