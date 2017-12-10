@@ -246,7 +246,8 @@ div.card-body iframe {
 
 @media (min-width: 992px) {
 	.navbar-nav {
-		width: 960px;
+		font-size: 14px;
+		width: 860px;
 		height: 30px;
 		background-color: #b02029;
 		background: linear-gradient(#cc3333, #962029);
