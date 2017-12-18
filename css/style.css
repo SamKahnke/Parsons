@@ -1,7 +1,7 @@
 
 #mission {
 	opacity: 0.4;
-	width: 570px;
+	min-width: 570px;
 }
 
 @media (min-width: 576px) {
@@ -13,18 +13,18 @@
 }
 
 @media (min-width: 992px) {
-	.container { max-width: 1140px; }
+	.container { max-width: 1280px; }
 
 	.header-container { height: 95px; }
 
 	#mission {
-		width: 670px;
+		min-width: 670px;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-	    max-width: 1140px;
+	    max-width: 1280px;
 	}
 }
 
@@ -85,9 +85,9 @@ a:hover {
 	margin-top: 30px;
 }
 
-.card-short { height: 229px; }
+/* .card-short { height: 229px; } */
 
-.card-tall { height: 488px; }
+/* .card-tall { height: 488px; } */
 
 #logo {
 	background-color: #fff;
@@ -208,18 +208,26 @@ a:hover {
 	position: relative;
 	height: 0;
 	overflow: hidden;
+	padding: 0px;
 }
 
 div.card-body iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: calc(100% - 40px);
-	height: calc(100% - 40px);
+	/* position: absolute; */
+	/* top: 0;
+	left: 0; */
+	height: 800px;
+	/* transform-origin: top; */
+	transform:  translateY(-350px);
+	/* width: calc(100% - 40px); */
+	/* height: calc(100% - 40px); */
 	border: none;
-	overflow-y: scroll;
+	overflow-y: auto;
 	margin: 20px;
 }
+
+/* iframe {
+	transform: scale(0.7);
+} */
 
 .dropdown-menu {
 	position: relative;
@@ -256,9 +264,9 @@ div.card-body iframe {
 	}
 
 	.navbar-nav {
-		font-size: 14px;
-		width: 860px;
-		min-width: 860px;
+		font-size: 12px;
+		width: 930px;
+		min-width: 930px;
 		height: 30px;
 		background-color: #b02029;
 		background: linear-gradient(#cc3333, #962029);
@@ -271,7 +279,7 @@ div.card-body iframe {
 	}
 
 	.navbar-brand {
-		font-size: 32px;
+		font-size: 36px;
 		padding-top: .3125rem;
 	    padding-bottom: .3125rem;
 	    line-height: inherit;
@@ -311,6 +319,7 @@ div.card-body iframe {
 }
 
 .card {
+	height: 350px;
 	border: none;
 	box-shadow: 0 0 3px #666;
 	margin-bottom: 30px;
