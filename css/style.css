@@ -208,6 +208,8 @@ a:hover {
 	position: relative;
 	height: 0;
 	overflow: hidden;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 div.card-body iframe {
@@ -217,9 +219,10 @@ div.card-body iframe {
 	/* width: calc(100% - 40px); */
 	/* height: calc(100% - 40px); */
 	border: none;
+	height: 900px;
 	overflow-y: scroll;
 	margin: 20px;
-	transform: translateY(-400px);
+	transform: scale(.83) translateY(-470px);
 }
 
 .dropdown-menu {
