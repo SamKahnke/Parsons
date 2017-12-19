@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 992px) {
-	.container { max-width: 1280px; }
+	.container { max-width: 1140px; }
 
 	.header-container { height: 95px; }
 
@@ -24,7 +24,7 @@
 
 @media (min-width: 1200px) {
 	.container {
-	    max-width: 1280px;
+	    max-width: 1140px;
 	}
 }
 
@@ -215,19 +215,15 @@ div.card-body iframe {
 	/* position: absolute; */
 	/* top: 0;
 	left: 0; */
-	height: 800px;
+	height: 600px;
 	/* transform-origin: top; */
-	transform:  translateY(-350px);
+	transform:  translateY(-270px) scale(.83);
 	/* width: calc(100% - 40px); */
 	/* height: calc(100% - 40px); */
 	border: none;
 	overflow-y: auto;
-	margin: 20px;
+	margin: 20px 0px 20px 0px;
 }
-
-/* iframe {
-	transform: scale(0.7);
-} */
 
 .dropdown-menu {
 	position: relative;
