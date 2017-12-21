@@ -1,7 +1,7 @@
 
 #mission {
 	opacity: 0.4;
-	width: 570px;
+	/* width: 570px; */
 }
 
 @media (min-width: 576px) {
@@ -18,7 +18,7 @@
 	.header-container { height: 95px; }
 
 	#mission {
-		width: 670px;
+		width: 1170px;
 	}
 }
 
@@ -87,7 +87,7 @@ a:hover {
 
 .card-short { height: 229px; }
 
-.card-tall { height: 488px; }
+.card-tall { height: 358px; }
 
 #logo {
 	background-color: #fff;
@@ -219,10 +219,10 @@ div.card-body iframe {
 	/* width: calc(100% - 40px); */
 	/* height: calc(100% - 40px); */
 	border: none;
-	height: 900px;
+	height: 800px;
 	overflow-y: scroll;
 	margin: 20px;
-	transform: scale(.83) translateY(-470px);
+	transform: scale(.83) translateY(-365px);
 }
 
 .dropdown-menu {
