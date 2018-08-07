@@ -70,8 +70,25 @@ a:hover {
 	margin: 0 0 0 auto;
 }
 
+i {
+	color: #fff;
+	float: right;
+	padding: 4px 20px 0px 0px;
+}
+
+#parsons-pulse-logo {
+	max-width: 280px;
+	height: 60px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
 @media (max-width: 992px) {
 	.navbar-separator { display: none; }
+
+	#parsons-pulse-logo {
+		max-width: 220px;
+	}
 }
 
 .navbar-separator { /*white line between nav items*/
@@ -84,10 +101,6 @@ a:hover {
 .main-content {
 	margin-top: 30px;
 }
-
-/* .card-short { height: 229px; } */
-
-/* .card-tall { height: 488px; } */
 
 #logo {
 	background-color: #fff;
@@ -115,13 +128,6 @@ a:hover {
 	#login-card {
 		margin-top: 100px;
 	}
-}
-
-#parsons-pulse-logo {
-	max-width: 300px;
-	height: 60px;
-	margin-top: 8px;
-	margin-bottom: 8px;
 }
 
 .btn-parsons {
@@ -206,23 +212,30 @@ a:hover {
 
 #CareerOpportunitiesBody {
 	position: relative;
-	height: 0;
+ 	height: 0;
 	overflow: hidden;
 	padding: 0px;
 }
 
 div.card-body iframe {
-	/* position: absolute; */
-	/* top: 0;
-	left: 0; */
-	height: 600px;
-	/* transform-origin: top; */
-	transform:  translateY(-270px) scale(.83);
-	/* width: calc(100% - 40px); */
-	/* height: calc(100% - 40px); */
+	height: 980px;
+	transform-origin: top;
+	width: 100%;
+	transform:  translateY(-540px);
 	border: none;
 	overflow-y: auto;
-	margin: 20px 0px 20px 0px;
+}
+
+@media (min-width: 768px) {
+	div.card-body iframe {
+		transform:  translateY(-590px);
+	}
+}
+
+@media (min-width: 992px) {
+	div.card-body iframe {
+		transform:  translateY(-540px);
+	}
 }
 
 .dropdown-menu {
@@ -283,11 +296,17 @@ div.card-body iframe {
 
 }
 
+@media (max-width: 690px) {
+	div.card-body iframe {transform:  translateY(-245px)}
+}
+
 @media (max-width: 576px) {
 	.navbar-brand {
 		font-size: 16px;
 		display: inline-flex;
 	}
+
+		div.card-body iframe {transform:  translateY(-265px)}
 }
 
 .navbar-toggler {
@@ -315,13 +334,14 @@ div.card-body iframe {
 }
 
 .card {
-	height: 350px;
+	height: 229px;
 	border: none;
 	box-shadow: 0 0 3px #666;
 	margin-bottom: 30px;
 }
 
 .card-header {
+	flex-direction: row;
 	font-size: 14px;
 	font-family: "eurostile-extended", sans-serif;
 	background-color: #000;
@@ -343,7 +363,6 @@ div.card-body iframe {
 	overflow: auto;
 	max-height: 95%;
 }
-
 
 .card-body-center {
 	padding-top: 0px;
